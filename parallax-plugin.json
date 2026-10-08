@@ -1,0 +1,25 @@
+{
+  "id": "io.github.jbirky.exoplanets",
+  "name": "Exoplanet plot",
+  "version": "1.0.0",
+  "description": "The NASA Exoplanet Archive's planets on any two of nine quantities, colored by discovery method or year, with the Solar System for scale and a slider that plays the discoveries year by year.",
+  "license": "MIT",
+  "author": { "name": "Jess Birky", "url": "https://github.com/jbirky" },
+  "homepage": "https://github.com/jbirky/parallax-exoplanets",
+  "parallaxEngine": ">=1.0.0",
+  "sandbox": "./sandbox.html",
+  "icon": "./icon.svg",
+  "categories": ["astronomy", "data"],
+  "keywords": ["exoplanets", "NASA Exoplanet Archive", "scatter plot", "planets"],
+  "permissions": [],
+  "contributes": {
+    "elementTypes": [
+      {
+        "type": "exoplanet-plot",
+        "label": "Exoplanet plot",
+        "defaultSize": { "width": 640, "height": 420 },
+        "defaultData": { "x": "period", "y": "mass", "color": "method", "solarSystem": true, "theme": "dark" }
+      }
+    ]
+  }
+}
