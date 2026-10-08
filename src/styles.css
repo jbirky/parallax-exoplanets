@@ -18,6 +18,9 @@ canvas { position: absolute; left: 0; top: 0; display: block; }
 .legend .years .ramp { width: 120px; margin: 0; }
 .legend .heading { color: var(--muted); padding: 0 2px 2px; }
 .legend button { all: unset; display: flex; align-items: center; gap: 6px; cursor: pointer; padding: 1px 3px; border-radius: 3px; color: var(--text); }
+/* One column, no wider than the legend, so long names shorten rather than run off */
+.legend:not(.below) { grid-template-columns: minmax(0, 1fr); }
+.legend:not(.below) button { box-sizing: border-box; width: 100%; }
 .legend button:hover, .legend button:focus-visible { background: var(--chip-border); }
 .legend button[aria-pressed="false"] { opacity: 0.4; text-decoration: line-through; }
 .legend .swatch { width: 9px; height: 9px; border-radius: 50%; flex: none; }

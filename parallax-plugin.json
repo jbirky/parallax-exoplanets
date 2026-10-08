@@ -1,7 +1,7 @@
 {
   "id": "io.github.jbirky.exoplanets",
   "name": "Exoplanet plot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The NASA Exoplanet Archive's planets on any two of nine quantities, colored by discovery method or year, with the Solar System for scale and a slider that plays the discoveries year by year.",
   "license": "MIT",
   "author": { "name": "Jess Birky", "url": "https://github.com/jbirky" },
